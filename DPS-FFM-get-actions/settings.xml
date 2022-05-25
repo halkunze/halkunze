@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="448ebc0e-6ba0-49c8-a852-03e8d56f33f5" name="DPS-FFM get actions" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="448ebc0e-6ba0-49c8-a852-03e8d56f33f5fileName">DPS-FFM-get-actions</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="DPS-FFM get actions.json">
+    <con:part>
+      <con:url>DPS-FFM get actions.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"DPS-FFM get actions","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/api/Services/actions":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}}}},"components":{"securitySchemes":{"Administrator":{"type":"oauth2","flows":{"password":{"tokenUrl":"https://ident.churchofjesuschrist.org/sso/oauth2/access_token","scopes":{"profile":""}}}}}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints/>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

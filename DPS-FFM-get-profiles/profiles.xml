@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="profiles" path="/api/Services/profiles" id="5f61a4a5-a806-4904-9e3a-6061ddf271f9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5f61a4a5-a806-4904-9e3a-6061ddf271f9fileName">profiles</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="429dd7e3-665c-43fe-b8e2-6f5c995ea462" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="getProfiles" id="7163b514-75c6-4e81-ae38-58d8876ad974" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+          <con:authProfile>Administrator</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

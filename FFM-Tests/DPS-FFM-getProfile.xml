@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="16bcf0d1-060a-4774-bfee-d03061370c03" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DPS-FFM getProfile" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="16bcf0d1-060a-4774-bfee-d03061370c03fileName">DPS-FFM-getProfile</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="getProfiles" id="905605e3-bfbf-4193-b3f1-cbb8fceab298">
+    <con:settings/>
+    <con:config service="DPS-FFM get profiles" resourcePath="/api/Services/profiles" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getProfiles" id="7163b514-75c6-4e81-ae38-58d8876ad974" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request/>
+        <con:originalUri>http://localhost/api/Services/profiles</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="57f0b8b8-acdb-4a71-aa0b-51129ffc0c56" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Transfer externalId" id="221792d0-3fb9-4863-b682-df269b53e3d7">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>externalId</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>getProfiles</con:sourceStep>
+        <con:sourcePath>$[0]['externalId']</con:sourcePath>
+        <con:targetType>id</con:targetType>
+        <con:targetStep>getProfile</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="getProfile" id="969f1aa8-e90d-4ba5-8450-3697e6a2f442">
+    <con:settings/>
+    <con:config service="DPS-FFM get profile" resourcePath="/api/Services/profile/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getProfile" id="2291e172-52f8-40f0-aa89-c4483bd56ed8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request/>
+        <con:originalUri>http://localhost/api/Services/profile/id</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="bff51ab0-00aa-4c05-9e0c-9b359a9494f1" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="be73df32-d731-455d-aa05-9b3685eba74a"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

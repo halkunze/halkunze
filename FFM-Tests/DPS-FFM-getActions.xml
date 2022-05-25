@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="ff20f936-0113-431c-865c-ced1a2a7f969" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DPS-FFM getActions" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ff20f936-0113-431c-865c-ced1a2a7f969fileName">DPS-FFM-getActions</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="getActions" id="a78de71d-afc9-4a1c-a416-013f0bfe1a72">
+    <con:settings/>
+    <con:config service="DPS-FFM get actions" resourcePath="/api/Services/actions" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getActions" id="c0b68147-753e-4dcb-8de9-df6df757afab" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://dps-ffm-test.churchofjesuschrist.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/api/Services/actions</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="9378c42e-e64c-4986-a961-29677a5228b4" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

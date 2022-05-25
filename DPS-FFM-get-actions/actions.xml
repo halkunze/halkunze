@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="actions" path="/api/Services/actions" id="72547aac-c543-47cf-a7ad-eb1eba165eeb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="72547aac-c543-47cf-a7ad-eb1eba165eebfileName">actions</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="feb5fa89-0540-429d-92c6-58d108fdd052" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="getActions" id="c0b68147-753e-4dcb-8de9-df6df757afab" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://dps-ffm-test.churchofjesuschrist.org</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>Administrator</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+          <con:authProfile>Administrator</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

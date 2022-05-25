@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c248226d-e4b4-42b2-8cc4-20a38a985bb8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DPS-FFM getJobs" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c248226d-e4b4-42b2-8cc4-20a38a985bb8fileName">DPS-FFM-getJobs</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="getJobs" id="95c91ffd-740f-4fdc-b88f-28c1d359f704">
+    <con:settings/>
+    <con:config service="DPS-FFM get jobs" resourcePath="/api/Services/jobs" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getJobs" id="bd4b4362-3a09-472f-b9df-a37511b65d26" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://dps-ffm-test.churchofjesuschrist.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/api/Services/jobs</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="d1f7ab86-548f-4b6d-a88f-f9c56be07142" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="a7e9cc36-37d4-4d36-a389-14b208357754" name="Response SLA">
+          <con:configuration>
+            <SLA>20000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Administrator</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

@@ -1,0 +1,12 @@
+DPS-FFM-get-jobs\jobs.xml
+DPS-FFM-get-actions\actions.xml
+DPS-FFM-get-profiles\profiles.xml
+DPS-FFM-post-profile\profile.xml
+DPS-FFM-put-profile\profile.xml
+DPS-FFM-get-profile\%7Bid%7D.xml
+DPS-FFM-delete-profile\%7Bid%7D.xml
+FFM-Tests\DPS-FFM-getJobs.xml
+FFM-Tests\DPS-FFM-getActions.xml
+FFM-Tests\DPS-FFM-getProfiles.xml
+FFM-Tests\DPS-FFM-updateProfile.xml
+FFM-Tests\DPS-FFM-getProfile.xml

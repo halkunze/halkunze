@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="{id}" path="/api/Services/profile/{id}" id="5f8743fc-ea4b-476c-9ace-6bcd216922a0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5f8743fc-ea4b-476c-9ace-6bcd216922a0fileName">%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>id</con:name>
+      <con:value>id</con:value>
+      <con:style>TEMPLATE</con:style>
+      <con:default>id</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="60019127-b43c-4f46-84e1-f09bedffc5d0" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="deleteProfile" id="83721363-426e-4904-8f2a-8f4bb60569a3" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

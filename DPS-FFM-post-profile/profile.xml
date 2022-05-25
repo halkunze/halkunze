@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="profile" path="/api/Services/profile" id="efc30261-8c84-4e33-8495-98719ed1e0cb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="efc30261-8c84-4e33-8495-98719ed1e0cbfileName">profile</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="b4b12908-d219-4ead-87b2-7e9d358de2c1" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="createProfile" id="b60ffe32-bbe3-4fa2-bab8-e755c18cccb1" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request>{
+
+	"profileName": "ReadyApi FFM Profile",
+	"properties": [
+	{
+		"propertyName": "IE ID",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "REP ID",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Preservation Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Original PID",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "File Name",
+		"propertyValue": "",
+		"propertyType": "STRIP_FLID_SWITCH_MXF_TO_MKV"
+	},
+	{
+		"propertyName": "File Location",
+		"propertyValue": "/export/;;;/import/",
+		"propertyType": "REPLACE"
+	},
+	{
+		"propertyName": "Usage Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Conversion Required",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Label (Representation)",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Representation Code",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Representation Entity Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Mime Type",
+		"propertyValue": ";;;",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "File Label",
+		"propertyValue": "\\.mxf;;;.mkv",
+		"propertyType": "REPLACE"
+	},
+	{
+		"propertyName": "File Struct Map Label",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Checksum",
+		"propertyValue": ";;;",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Submission Reason",
+		"propertyValue": ";;;Migration Project",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Notes",
+		"propertyValue": ";;;Project to migrate all Front Porch Digital JPEG2000/.mxf to FFV1/.mkv",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Representation Metadata",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "File Metadata",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Relationship Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Relationship SubType",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Related Object Identifier Value",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Related Object Sequence",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Creating Application Name",
+		"propertyValue": ";;;Vantage/Flip64",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Creating Application Version",
+		"propertyValue": ";;;8.0/8.0.11",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Date Created By Application",
+		"propertyValue": "",
+		"propertyType": "FILE_CREATION_DATE"
+	},
+	{
+		"propertyName": "Environment Hardware Name",
+		"propertyValue": ";;;Intel Xeon Gold 6146 CPU @3.20GHz (2 processors)",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Environment Hardware Type",
+		"propertyValue": ";;;Windows Server 2019 64-bit",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Environment Hardware Other Information",
+		"propertyValue": ";;;256 GB RAM",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Related Object Identifier Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	}
+]
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

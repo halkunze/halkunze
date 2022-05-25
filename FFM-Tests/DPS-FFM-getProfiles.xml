@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0b5e44a3-c19d-41b7-ad82-372f1526bdf7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DPS-FFM getProfiles" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0b5e44a3-c19d-41b7-ad82-372f1526bdf7fileName">DPS-FFM-getProfiles</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="getProfiles" id="135f3612-eae0-4ea4-932c-2d62fdd6a318">
+    <con:settings/>
+    <con:config service="DPS-FFM get profiles" resourcePath="/api/Services/profiles" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getProfiles" id="7163b514-75c6-4e81-ae38-58d8876ad974" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request/>
+        <con:originalUri>http://localhost/api/Services/profiles</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="a516a5e8-d001-465f-bb4f-0e0668028dd9" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

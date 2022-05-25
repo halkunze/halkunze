@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="ecd7fc2c-2634-47e9-a0f3-e4f9231e74b1" name="DPS-FFM get jobs" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ecd7fc2c-2634-47e9-a0f3-e4f9231e74b1fileName">DPS-FFM-get-jobs</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="DPS-FFM get jobs.json">
+    <con:part>
+      <con:url>DPS-FFM get jobs.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"DPS-FFM get jobs","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/api/Services/jobs":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}}}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>https://dps-ffm-test.churchofjesuschrist.org</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

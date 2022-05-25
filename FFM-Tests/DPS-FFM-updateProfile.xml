@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="7a3660b4-28e0-49ab-80b7-d7b615c6e8b7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DPS-FFM updateProfile" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7a3660b4-28e0-49ab-80b7-d7b615c6e8b7fileName">DPS-FFM-updateProfile</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="createProfile" id="527c6fd3-28bb-4c2b-b4de-ed900875f7c6">
+    <con:settings/>
+    <con:config service="DPS-FFM post profile" resourcePath="/api/Services/profile" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="createProfile" id="b60ffe32-bbe3-4fa2-bab8-e755c18cccb1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request>{
+
+	"profileName": "ReadyApi FFM Profile",
+	"properties": [
+	{
+		"propertyName": "IE ID",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "REP ID",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Preservation Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Original PID",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "File Name",
+		"propertyValue": "",
+		"propertyType": "STRIP_FLID_SWITCH_MXF_TO_MKV"
+	},
+	{
+		"propertyName": "File Location",
+		"propertyValue": "/export/;;;/import/",
+		"propertyType": "REPLACE"
+	},
+	{
+		"propertyName": "Usage Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Conversion Required",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Label (Representation)",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Representation Code",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Representation Entity Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Mime Type",
+		"propertyValue": ";;;",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "File Label",
+		"propertyValue": "\\.mxf;;;.mkv",
+		"propertyType": "REPLACE"
+	},
+	{
+		"propertyName": "File Struct Map Label",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Checksum",
+		"propertyValue": ";;;",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Submission Reason",
+		"propertyValue": ";;;Migration Project",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Notes",
+		"propertyValue": ";;;Project to migrate all Front Porch Digital JPEG2000/.mxf to FFV1/.mkv",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Representation Metadata",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "File Metadata",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Relationship Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Relationship SubType",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Related Object Identifier Value",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Related Object Sequence",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	},
+	{
+		"propertyName": "Creating Application Name",
+		"propertyValue": ";;;Vantage/Flip64",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Creating Application Version",
+		"propertyValue": ";;;8.0/8.0.11",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Date Created By Application",
+		"propertyValue": "",
+		"propertyType": "FILE_CREATION_DATE"
+	},
+	{
+		"propertyName": "Environment Hardware Name",
+		"propertyValue": ";;;Intel Xeon Gold 6146 CPU @3.20GHz (2 processors)",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Environment Hardware Type",
+		"propertyValue": ";;;Windows Server 2019 64-bit",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Environment Hardware Other Information",
+		"propertyValue": ";;;256 GB RAM",
+		"propertyType": "REPLACE_ALL"
+	},
+	{
+		"propertyName": "Related Object Identifier Type",
+		"propertyValue": "",
+		"propertyType": "IGNORE"
+	}
+]
+}</con:request>
+        <con:originalUri>http://localhost/api/Services/profile</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="fcb5d69a-f8b5-4b4f-8b7a-47a17d179018" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Transfer externalId" id="d443393f-3ca4-4706-9cf2-5c4ae01d017a">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>externalId</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>createProfile</con:sourceStep>
+        <con:sourcePath>$['externalId']</con:sourcePath>
+        <con:targetType>Request</con:targetType>
+        <con:targetStep>updateProfile</con:targetStep>
+        <con:targetPath>externalId</con:targetPath>
+        <con:type>JSONPATH</con:type>
+        <con:targetTransferType>JSONPATH</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="updateProfile" id="cff2d11c-fc37-41aa-83bb-19d0d33bcba0">
+    <con:settings/>
+    <con:config service="DPS-FFM put profile" resourcePath="/api/Services/profile" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="updateProfile" id="16386b54-2c44-4893-8834-7d04293efded" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request>{"externalId":"7de27926-a678-4cfc-a47d-5305cd8adde3","profileName":"ReadyApi FFM Profile","properties":[{"propertyName":"IE ID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"REP ID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Preservation Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Original PID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"File Name","propertyValue":"","propertyType":"STRIP_FLID_SWITCH_MXF_TO_MKV"},{"propertyName":"File Location","propertyValue":"/export/;;;/importtune/","propertyType":"REPLACE"},{"propertyName":"Usage Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Conversion Required","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Label (Representation)","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Representation Code","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Representation Entity Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Mime Type","propertyValue":";;;","propertyType":"REPLACE_ALL"},{"propertyName":"File Label","propertyValue":"\\.mxf;;;.mkv","propertyType":"REPLACE"},{"propertyName":"File Struct Map Label","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Checksum","propertyValue":";;;","propertyType":"REPLACE_ALL"},{"propertyName":"Submission Reason","propertyValue":";;;Migration Project","propertyType":"REPLACE_ALL"},{"propertyName":"Notes","propertyValue":";;;Project to migrate all Front Porch Digital JPEG2000/.mxf to FFV1/.mkv","propertyType":"REPLACE_ALL"},{"propertyName":"Representation Metadata","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"File Metadata","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Relationship Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Relationship SubType","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Related Object Identifier Value","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Related Object Sequence","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Creating Application Name","propertyValue":";;;Vantage/Flip64","propertyType":"REPLACE_ALL"},{"propertyName":"Creating Application Version","propertyValue":";;;8.0/8.0.11","propertyType":"REPLACE_ALL"},{"propertyName":"Date Created By Application","propertyValue":"","propertyType":"FILE_CREATION_DATE"},{"propertyName":"Environment Hardware Name","propertyValue":";;;Intel Xeon Gold 6146 CPU @3.20GHz (2 processors)","propertyType":"REPLACE_ALL"},{"propertyName":"Environment Hardware Type","propertyValue":";;;Windows Server 2019 64-bit","propertyType":"REPLACE_ALL"},{"propertyName":"Environment Hardware Other Information","propertyValue":";;;256 GB RAM","propertyType":"REPLACE_ALL"},{"propertyName":"Related Object Identifier Type","propertyValue":"","propertyType":"IGNORE"}]}</con:request>
+        <con:originalUri>http://localhost/api/Services/profile</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f9fced16-4a99-4fbe-96ac-5f1f53ef6726" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Transfer update externalId" id="6f2615a9-cfe5-4c9f-963a-7fbc18e64d00">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>externalId</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>updateProfile</con:sourceStep>
+        <con:sourcePath>$['externalId']</con:sourcePath>
+        <con:targetType>id</con:targetType>
+        <con:targetStep>deleteProfile</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="deleteProfile" id="211c31cc-f570-40ac-80c0-cc718be3bee6">
+    <con:settings/>
+    <con:config service="DPS-FFM delete profile" resourcePath="/api/Services/profile/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="deleteProfile" id="83721363-426e-4904-8f2a-8f4bb60569a3" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request/>
+        <con:originalUri>http://localhost/api/Services/profile/e86243f7-d397-4e10-97a0-acc288d84ef8</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="203e2234-144e-4f99-91d8-f61e0a5f4b6a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="7de27926-a678-4cfc-a47d-5305cd8adde3"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>
