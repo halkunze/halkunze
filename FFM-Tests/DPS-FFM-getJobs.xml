@@ -32,7 +32,7 @@
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
-            <con:authProfile>Inherit From Parent</con:authProfile>
+            <con:authProfile>Administrator</con:authProfile>
           </con:entry>
           <con:entry environmentId="bded10cf-f107-436f-bdfd-cd9c3a04b7bf">
             <con:authProfile>Inherit From Parent</con:authProfile>

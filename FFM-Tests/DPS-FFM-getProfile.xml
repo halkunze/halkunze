@@ -31,6 +31,9 @@
           <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
             <con:authProfile>Administrator</con:authProfile>
           </con:entry>
+          <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -76,6 +79,9 @@
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
             <con:authProfile>Administrator</con:authProfile>
           </con:entry>
         </con:environmentSpec>

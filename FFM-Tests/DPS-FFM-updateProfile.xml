@@ -183,6 +183,9 @@
           <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
             <con:authProfile>Administrator</con:authProfile>
           </con:entry>
+          <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -211,7 +214,7 @@
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
-        <con:request>{"externalId":"7de27926-a678-4cfc-a47d-5305cd8adde3","profileName":"ReadyApi FFM Profile","properties":[{"propertyName":"IE ID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"REP ID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Preservation Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Original PID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"File Name","propertyValue":"","propertyType":"STRIP_FLID_SWITCH_MXF_TO_MKV"},{"propertyName":"File Location","propertyValue":"/export/;;;/importtune/","propertyType":"REPLACE"},{"propertyName":"Usage Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Conversion Required","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Label (Representation)","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Representation Code","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Representation Entity Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Mime Type","propertyValue":";;;","propertyType":"REPLACE_ALL"},{"propertyName":"File Label","propertyValue":"\\.mxf;;;.mkv","propertyType":"REPLACE"},{"propertyName":"File Struct Map Label","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Checksum","propertyValue":";;;","propertyType":"REPLACE_ALL"},{"propertyName":"Submission Reason","propertyValue":";;;Migration Project","propertyType":"REPLACE_ALL"},{"propertyName":"Notes","propertyValue":";;;Project to migrate all Front Porch Digital JPEG2000/.mxf to FFV1/.mkv","propertyType":"REPLACE_ALL"},{"propertyName":"Representation Metadata","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"File Metadata","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Relationship Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Relationship SubType","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Related Object Identifier Value","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Related Object Sequence","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Creating Application Name","propertyValue":";;;Vantage/Flip64","propertyType":"REPLACE_ALL"},{"propertyName":"Creating Application Version","propertyValue":";;;8.0/8.0.11","propertyType":"REPLACE_ALL"},{"propertyName":"Date Created By Application","propertyValue":"","propertyType":"FILE_CREATION_DATE"},{"propertyName":"Environment Hardware Name","propertyValue":";;;Intel Xeon Gold 6146 CPU @3.20GHz (2 processors)","propertyType":"REPLACE_ALL"},{"propertyName":"Environment Hardware Type","propertyValue":";;;Windows Server 2019 64-bit","propertyType":"REPLACE_ALL"},{"propertyName":"Environment Hardware Other Information","propertyValue":";;;256 GB RAM","propertyType":"REPLACE_ALL"},{"propertyName":"Related Object Identifier Type","propertyValue":"","propertyType":"IGNORE"}]}</con:request>
+        <con:request>{"externalId":"002a8fd6-73da-40d1-b728-670ecbb9bb9a","profileName":"ReadyApi FFM Profile","properties":[{"propertyName":"IE ID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"REP ID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Preservation Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Original PID","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"File Name","propertyValue":"","propertyType":"STRIP_FLID_SWITCH_MXF_TO_MKV"},{"propertyName":"File Location","propertyValue":"/export/;;;/importtune/","propertyType":"REPLACE"},{"propertyName":"Usage Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Conversion Required","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Label (Representation)","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Representation Code","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Representation Entity Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Mime Type","propertyValue":";;;","propertyType":"REPLACE_ALL"},{"propertyName":"File Label","propertyValue":"\\.mxf;;;.mkv","propertyType":"REPLACE"},{"propertyName":"File Struct Map Label","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Checksum","propertyValue":";;;","propertyType":"REPLACE_ALL"},{"propertyName":"Submission Reason","propertyValue":";;;Migration Project","propertyType":"REPLACE_ALL"},{"propertyName":"Notes","propertyValue":";;;Project to migrate all Front Porch Digital JPEG2000/.mxf to FFV1/.mkv","propertyType":"REPLACE_ALL"},{"propertyName":"Representation Metadata","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"File Metadata","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Relationship Type","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Relationship SubType","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Related Object Identifier Value","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Related Object Sequence","propertyValue":"","propertyType":"IGNORE"},{"propertyName":"Creating Application Name","propertyValue":";;;Vantage/Flip64","propertyType":"REPLACE_ALL"},{"propertyName":"Creating Application Version","propertyValue":";;;8.0/8.0.11","propertyType":"REPLACE_ALL"},{"propertyName":"Date Created By Application","propertyValue":"","propertyType":"FILE_CREATION_DATE"},{"propertyName":"Environment Hardware Name","propertyValue":";;;Intel Xeon Gold 6146 CPU @3.20GHz (2 processors)","propertyType":"REPLACE_ALL"},{"propertyName":"Environment Hardware Type","propertyValue":";;;Windows Server 2019 64-bit","propertyType":"REPLACE_ALL"},{"propertyName":"Environment Hardware Other Information","propertyValue":";;;256 GB RAM","propertyType":"REPLACE_ALL"},{"propertyName":"Related Object Identifier Type","propertyValue":"","propertyType":"IGNORE"}]}</con:request>
         <con:originalUri>http://localhost/api/Services/profile</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="f9fced16-4a99-4fbe-96ac-5f1f53ef6726" name="Valid HTTP Status Codes">
           <con:settings/>
@@ -227,6 +230,9 @@
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
             <con:authProfile>Administrator</con:authProfile>
           </con:entry>
         </con:environmentSpec>
@@ -270,10 +276,13 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="id" value="7de27926-a678-4cfc-a47d-5305cd8adde3"/>
+          <con:entry key="id" value="002a8fd6-73da-40d1-b728-670ecbb9bb9a"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="ec217cb2-577b-4207-b83b-6826a912ac3c">
+            <con:authProfile>Administrator</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="537e5998-407f-49dd-ab95-7c9d7cae8dc6">
             <con:authProfile>Administrator</con:authProfile>
           </con:entry>
         </con:environmentSpec>
