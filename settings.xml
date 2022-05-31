@@ -13,18 +13,18 @@
       <con:name>Administrator</con:name>
       <con:type>OAuth 2.0</con:type>
       <con:accessTokenURI>https://ident.churchofjesuschrist.org/sso/oauth2/access_token</con:accessTokenURI>
-      <con:accessToken>hJb_cyn2tfZk0sWu4TovAE17EcE</con:accessToken>
+      <con:accessToken>Tyx0t2BeF8nSqEmYBaAHQ35lMv4</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1653689591</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1654011911</con:accessTokenIssuedTime>
       <con:clientID>HKp3YEbcTdU7dd8C</con:clientID>
       <con:resourceOwnerName>dps01</con:resourceOwnerName>
       <con:resourceOwnerPassword>dpsuser1</con:resourceOwnerPassword>
       <con:clientSecret>EBJ79sfWtpxEWp3IVzRMZyn9WJr0YuLx</con:clientSecret>
       <con:oAuth2Flow>RESOURCE_OWNER_PASSWORD_CREDENTIALS</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:refreshToken>2nbKUEIcNEQzCNt5sPF0q88KEhs</con:refreshToken>
+      <con:refreshToken>9WIoHLizHiLDwLXll7jpURr8gzM</con:refreshToken>
       <con:scope>profile</con:scope>
       <con:accessTokenExpirationTime>1799</con:accessTokenExpirationTime>
       <con:jwtConfiguration/>
@@ -179,18 +179,18 @@ log.info("Set new token: " + authProfile.getAccessToken());</con:script>
       <con:name>Administrator</con:name>
       <con:type>OAuth 2.0</con:type>
       <con:accessTokenURI>https://ident.churchofjesuschrist.org/sso/oauth2/access_token</con:accessTokenURI>
-      <con:accessToken>hJb_cyn2tfZk0sWu4TovAE17EcE</con:accessToken>
+      <con:accessToken>Tyx0t2BeF8nSqEmYBaAHQ35lMv4</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1653689591</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1654011911</con:accessTokenIssuedTime>
       <con:clientID>HKp3YEbcTdU7dd8C</con:clientID>
       <con:resourceOwnerName>dps01</con:resourceOwnerName>
       <con:resourceOwnerPassword>dpsuser1</con:resourceOwnerPassword>
       <con:clientSecret>EBJ79sfWtpxEWp3IVzRMZyn9WJr0YuLx</con:clientSecret>
       <con:oAuth2Flow>RESOURCE_OWNER_PASSWORD_CREDENTIALS</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:refreshToken>2nbKUEIcNEQzCNt5sPF0q88KEhs</con:refreshToken>
+      <con:refreshToken>9WIoHLizHiLDwLXll7jpURr8gzM</con:refreshToken>
       <con:scope>profile</con:scope>
       <con:accessTokenExpirationTime>1799</con:accessTokenExpirationTime>
       <con:jwtConfiguration/>
